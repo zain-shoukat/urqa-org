@@ -1,0 +1,3 @@
+const ARABIC_LOCALIZATION = {};
+
+export default ARABIC_LOCALIZATION;
