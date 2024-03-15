@@ -41,8 +41,9 @@ ADD --chown=node:node $application_dir/package.json \
 
 
 # Switch to non-root user and install dependencies
-RUN npm ci
+USER node
 
+RUN yarn install
 # Add files to the container, perform chmod and chown
 ADD --chown=node:node $application_dir /organization_service/
 
